@@ -1,42 +1,49 @@
 body {
   background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #111;
+  line-height: 1.28571;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-.page-header {
-  font-family: "Montserrat", sans-serif;
-  color: #111;
-  font-size: 14px;
-}
-.page-header a {
-  color: currentColor;
+a {
   text-decoration: none;
+  color: currentColor;
 }
-.page-header > a {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.11111;
-  letter-spacing: -0.03em;
+img {
+  display: block;
+  max-width: 100%;
 }
-.page-header .logo-part {
-  font-style: italic;
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-.page-header .nav-link {
-  font-weight: 500;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
-}
-.page-header .nav-link:hover {
-  text-decoration: underline;
-}
-.page-header .social-link:hover,
-.page-header .social-link:focus {
-  background-color: #1e1823;
-  color: #fff;
-}
-.page-header .social-link:active {
-  background-color: transparent;
-  color: #fd9222;
-}
+
+/* header */

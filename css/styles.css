@@ -135,11 +135,21 @@ button {
   line-height: 1.28571;
   color: #fff;
 }
+.purchase-btn:hover,
+.purchase-btn:focus {
+  background: rgba(253, 146, 34, 0.1);
+  color: #fd9222;
+}
 .cooking {
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 12px 38px;
   color: #fff;
+}
+.cooking:hover,
+.cooking:focus {
+  border-color: #fd9222;
+  color: #fd9222;
 }
 .scroll-down {
   display: flex;

@@ -95,3 +95,68 @@ button {
   border-radius: 10px;
   padding: 8px;
 }
+
+/* hero */
+.hero {
+  padding-bottom: 80px;
+}
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.4);
+  padding: 40px;
+  border-radius: 30px;
+}
+.hero-title {
+  padding-top: 340px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.03em;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+.hero-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-links div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.purchase-btn {
+  background: #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  font-weight: 600;
+  line-height: 1.28571;
+  color: #fff;
+}
+.cooking {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 38px;
+  color: #fff;
+}
+.scroll-down {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.scroll-down span:first-child {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.scroll-down span:last-child {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 19px;
+}
+.scroll-down:hover span:first-child,
+.scroll-down:focus span:first-child {
+  color: #fd9222;
+}

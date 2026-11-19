@@ -1,7 +1,6 @@
 body {
   background-color: #fafafa;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   color: #111;
   min-height: 100vh;
   display: flex;
@@ -26,6 +25,7 @@ p {
   margin-bottom: 0;
   font-weight: 600;
   line-height: 1.28571;
+  font-size: 14px;
 }
 ul {
   list-style-type: none;
@@ -37,6 +37,7 @@ a {
   text-decoration: none;
   color: currentColor;
   line-height: 1.28571;
+  /* font-size: 14px; */
 }
 img {
   display: block;
@@ -209,4 +210,57 @@ button {
   opacity: 0.7;
   font-weight: 400;
   letter-spacing: -0.02em;
+}
+
+/* ingredients */
+.ingredients {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.ingredients-title {
+  max-width: 412px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.ingredients-title > span {
+  color: #fd9222;
+}
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ingredients-item {
+  flex-basis: calc((100% - 3 * 32px) / 4);
+  padding: 28px 24px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.ingredients-item .ingredient-image {
+  margin-bottom: 36px;
+}
+.ingredients-list .ingredients-item:nth-child(2n + 1) {
+  color: #fff;
+}
+.ingredients-list .ingredients-item:first-child,
+.ingredients-list .ingredients-item:nth-child(5) {
+  background-color: #fd9222;
+}
+.ingredients-list .ingredients-item:nth-child(2n) {
+  border: 1px solid #fd9222;
+  background-color: #fff;
+}
+.ingredients-list .ingredients-item:nth-child(3),
+.ingredients-list .ingredients-item:nth-child(7) {
+  background-color: #1e1823;
 }

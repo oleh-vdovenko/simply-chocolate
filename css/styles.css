@@ -142,14 +142,14 @@ button {
   background: rgba(253, 146, 34, 0.1);
   color: #fd9222;
 }
-.cooking {
+.cooking-link {
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 12px 38px;
   color: #fff;
 }
-.cooking:hover,
-.cooking:focus {
+.cooking-link:hover,
+.cooking-link:focus {
   border-color: #fd9222;
   color: #fd9222;
 }
@@ -174,6 +174,15 @@ button {
 }
 
 /* benefits */
+.container > h2 {
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.container > h2 > span {
+  color: #fd9222;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -226,13 +235,6 @@ button {
 .ingredients-title {
   max-width: 412px;
   text-align: center;
-  font-size: 24px;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-.ingredients-title > span {
-  color: #fd9222;
 }
 .ingredients-list {
   display: flex;
@@ -263,4 +265,55 @@ button {
 .ingredients-list .ingredients-item:nth-child(3),
 .ingredients-list .ingredients-item:nth-child(7) {
   background-color: #1e1823;
+}
+
+/* cooking */
+.cooking {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.cooking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.cooking-article {
+  display: flex;
+  gap: 20px;
+}
+.thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cooking-descr {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.process-title {
+  font-size: 18px;
+  line-height: 1.33333;
+  max-width: 350px;
+}
+.process-list {
+  /* padding-left: 16px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+}
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.process-step::before {
+  content: url("../images/marker.webp");
 }

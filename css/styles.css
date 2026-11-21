@@ -317,3 +317,65 @@ button {
 .process-step::before {
   content: url("../images/marker.webp");
 }
+
+/* products */
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 18px;
+}
+.products-item {
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 16px;
+  padding: 31px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.products-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.product-spec {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+.product-filling {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+.product-type {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.product-price {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 7px;
+  background-color: #fafafa;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  width: 96px;
+  margin: 0 auto;
+}

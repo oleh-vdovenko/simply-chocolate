@@ -37,7 +37,7 @@ a {
   text-decoration: none;
   color: currentColor;
   line-height: 1.28571;
-  /* font-size: 14px; */
+  font-size: 14px;
 }
 img {
   display: block;
@@ -285,6 +285,8 @@ button {
 .thumb {
   border-radius: 16px;
   overflow: hidden;
+}
+.cooking-thumb {
   flex-shrink: 0;
 }
 .cooking-descr {
@@ -378,4 +380,35 @@ button {
   line-height: 1.28571;
   width: 96px;
   margin: 0 auto;
+}
+
+/* topsellers */
+.topsellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.topsellers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.topsellers-list {
+  display: flex;
+  gap: 16px;
+}
+.topsellers-thumb {
+  border-radius: 16px 16px 0 0;
+}
+.topsellers-type {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
 }
